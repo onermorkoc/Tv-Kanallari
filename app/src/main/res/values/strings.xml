@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tv Channels</string>
+    <string name="total_channel">Total channel:</string>
+    <string name="all">All</string>
+    <string name="news">News</string>
+    <string name="child">Child</string>
+    <string name="sport">Sport</string>
+    <string name="music">Music</string>
+    <string name="documentary">Documentary</string>
+</resources>

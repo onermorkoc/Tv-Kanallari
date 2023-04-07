@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tv Kanalları</string>
+    <string name="total_channel">Toplam kanal:</string>
+    <string name="all">Tümü</string>
+    <string name="news">Haber</string>
+    <string name="child">Çocuk</string>
+    <string name="sport">Spor</string>
+    <string name="music">Müzik</string>
+    <string name="documentary">Belgesel</string>
+</resources>

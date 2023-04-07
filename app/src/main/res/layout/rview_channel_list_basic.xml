@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playTvScreen_selected_ch_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="@android:drawable/list_selector_background"
+    android:foregroundTint="@color/selectedItem"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/playTvScreen_ch_name_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

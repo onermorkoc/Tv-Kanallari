@@ -1,0 +1,15 @@
+<resources>
+    <style name="Theme.TvKanalları" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        // Action bar gizleme
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        // Status bar ve navigation bar renk
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+
+        // Status bar ve navigation bar icon renk
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
