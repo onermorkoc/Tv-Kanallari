@@ -9,7 +9,7 @@ Açık kaynak kodlu basit bir IPTV uygulaması.
 ✅ Toplam 46 kanal. Genel olarak çoğu FHD ve HD.<br/>
 ✅ Telefon / Tablet ve Android televizyon / Tv Box uyumlu. <br/>
 
-Sorunsuz bi şekilde ulusal kanalları izlemenin keyfini çıkarın 🥳
+Sorunsuz bi şekilde ulusal kanalları izlemenin keyfini çıkarın. 🥳
 
 # Kullanılan Kütüphaneler
 ➡️[Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)<br/>
