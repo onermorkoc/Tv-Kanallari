@@ -1,6 +1,7 @@
 package com.onermorkoc.tvkanallari.adapter
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,8 +16,11 @@ class PlayTvScreenRviewAdapter(val channelArrayList: ArrayList<ChannelData>): Re
 
     class PlayTvScreenRviewVH(itemview: View): RecyclerView.ViewHolder(itemview) {}
     private lateinit var onListItemClick: PlayTvScreen.OnListItemClick
+    private lateinit var context: Context
+    private var currentItem = 0
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlayTvScreenRviewVH {
+        context = parent.context
         val inflater = LayoutInflater.from(parent.context).inflate(R.layout.rview_channel_list_basic, parent, false)
         return PlayTvScreenRviewVH(inflater)
     }
@@ -25,8 +29,8 @@ class PlayTvScreenRviewAdapter(val channelArrayList: ArrayList<ChannelData>): Re
         return channelArrayList.size
     }
 
-    @SuppressLint("SetTextI18n")
-    override fun onBindViewHolder(holder: PlayTvScreenRviewVH, position: Int) {
+    @SuppressLint("SetTextI18n", "NotifyDataSetChanged")
+    override fun onBindViewHolder(holder: PlayTvScreenRviewVH, @SuppressLint("RecyclerView") position: Int) {
 
         val id = channelArrayList[position].id
         val name = channelArrayList[position].name
@@ -34,11 +38,25 @@ class PlayTvScreenRviewAdapter(val channelArrayList: ArrayList<ChannelData>): Re
         holder.itemView.playTvScreen_ch_name_id.setText((id + 1).toString() + "-" + name)
 
         holder.itemView.playTvScreen_selected_ch_id.setOnClickListener {
+            currentItem = position
+            notifyDataSetChanged()
             onListItemClick.onClick(id)
+        }
+
+        if (currentItem == position){
+            holder.itemView.setBackgroundColor(context.getColor(R.color.currentItem))
+        }else{
+            holder.itemView.setBackgroundColor(context.getColor(R.color.black))
         }
     }
 
     fun setOnListItemClick(context: PlayTvScreen.OnListItemClick){
         onListItemClick = context
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun setCurrentItem(currentItem: Int){
+        this.currentItem = currentItem
+        notifyDataSetChanged()
     }
 }

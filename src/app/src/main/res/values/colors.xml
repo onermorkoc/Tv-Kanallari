@@ -2,6 +2,7 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="transparent">#00FFFFFF</color>
-    <color name="selectedItem">#660090FF</color>
+    <color name="selectedItem">#662196F3</color>
+    <color name="currentItem">#66FF9800</color>
     <color name="search_bg_color">#FFFFFF</color>
 </resources>
