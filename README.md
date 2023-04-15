@@ -6,7 +6,7 @@ Açık kaynak kodlu basit bir IPTV uygulaması.
 ✅ Reklam yok.<br/>
 ✅ Kimlik doğrulama yok.<br/>
 ✅ Modern, şık ve basit arayüz.<br/>
-✅ Toplam 46 kanal. Genel olarak çoğu FHD ve HD.<br/>
+✅ Toplam 36 kanal. Genel olarak çoğu FHD ve HD.<br/>
 ✅ Telefon / Tablet ve Android televizyon / Tv Box uyumlu. <br/>
 
 Sorunsuz bi şekilde ulusal kanalları izlemenin keyfini çıkarın. 🥳
